@@ -1,7 +1,11 @@
 package Array;
 
 import java.util.*;
-
+/*
+* Spiral Matrix的方法是计算坐标的候选值，这是因为它在边界的转折点是有规律的（按顺时针方向）。
+* 而本题在边界转折到下一个点是没有规律的。虽然要么向下，要么向右。但是可能连续向右，或者连续向下，并没有规律
+* 本题的规律正是从不同的越界点有不同的移动位置。
+* */
 public class DiagonalTraverse {
     public int[] findDiagonalOrder(int[][] matrix) {
         int m = matrix.length;
