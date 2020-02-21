@@ -36,7 +36,7 @@ public class Test3DES {
  
             System.out.println("加密后base64表示=" + EncryptUtils.byte2hex(Base64.decode(encrypt)));
  
-            System.out.println("调用原始密钥算加密结果=" + EncryptUtils.Encrypt3DES(password, key));
+//            System.out.println("调用原始密钥算加密结果=" + EncryptUtils.Encrypt3DES(password, key));
  
  
  
@@ -46,7 +46,7 @@ public class Test3DES {
  
                 System.out.println("用预转换密钥算解密结果=" + decrypt);
  
-                System.out.println("调用原始密钥算解密结果=" + EncryptUtils.Decrypt3DES(encrypt, key));
+//                System.out.println("调用原始密钥算解密结果=" + EncryptUtils.Decrypt3DES(encrypt, key));
  
             } catch (Exception ex) {
  
