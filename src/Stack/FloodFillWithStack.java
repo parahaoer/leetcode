@@ -3,6 +3,8 @@ class Solution {
         
         int r = image.length;
         int c = image[0].length;
+
+        // 将栈换成队列一样可以通过
         Stack<Integer> s = new Stack();
         
         Set<Integer> visited = new HashSet();
