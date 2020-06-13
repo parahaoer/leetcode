@@ -17,7 +17,7 @@ class Solution {
         while(!s.isEmpty()) {
             
             int temp = s.pop();
-            
+            //入栈时 sr<r 一定成立, 所有 下面两个语句才成立
             int tc = temp/r;
             int tr = temp%r;
             
