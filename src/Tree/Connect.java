@@ -32,6 +32,11 @@ class Solution {
             int size = q.size();
             
             Node temp = null;
+
+            /**
+                for循环中会添加左右节点到 队列，所以当遍历完for循环（一层节点），队列不会空。
+             */
+
             for(int i=0; i<size; i++) {
                 temp = q.poll();
                 temp.next = q.peek();

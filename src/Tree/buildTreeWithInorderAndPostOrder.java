@@ -12,7 +12,7 @@ class Solution {
         对于左子树，中序遍历和后序遍历的起点位置不相关。后序遍历的终点位置根据左子树的长度推算出，跟中序遍历的终点位置没有直接关系
      */
     public TreeNode buildTree(int[] inorder, int[] postorder) {
-        
+
         if(inorder.length ==0 || postorder.length == 0) return null;
         
         return buildTree(inorder, postorder, 0, inorder.length-1, 0, postorder.length-1);
@@ -20,6 +20,7 @@ class Solution {
     
     public TreeNode buildTree(int[] inorder, int[] postorder, int instart, int inend, int poststart, int postend) {
         
+        // 表示无法中序遍历或者后序遍历，也就是上一个节点不存在左子树或者右子树，返回空。
         if(inend < instart || postend < poststart) return null;
         int rootval = postorder[postend];
         int rootid = getId(inorder, rootval);
