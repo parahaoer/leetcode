@@ -12,7 +12,7 @@ class Solution {
 
         if(root == null) return false;
         Stack<Pair<TreeNode, Integer>> s = new Stack();
-
+        //cur指针用来将节点入栈
         TreeNode cur = root;
 
         while(!s.isEmpty() || cur != null) {
