@@ -1,9 +1,9 @@
 public class CountSmaller {
     /**
-     * 因为在归并排序的过程中，元素的位置会变化，所以使用索引数组来替代元素数组进行归并排序
+     * 因为在归并排序的过程中，元素的位置会变化，所以使用索引数组来替代原始数组进行归并排序
      * “原始数组” 不变，用于比较两个元素的大小，真正位置变换的是 “索引数组”。
      */
-    
+
     public static void main(String []args){
         int []arr = {5,2,6,1};
         Solution s = new Solution();
