@@ -8,6 +8,7 @@ class Solution {
                     LinkedList<Character> track = new LinkedList<>();
                     Set<Integer> visited =new HashSet();
                     track.add(board[i][j]);
+                    visited.add(i*n+j);
                     if(backtrack(board, track, i, j, 1, word, visited))
                         return true;
                 }
@@ -24,7 +25,7 @@ class Solution {
         
         int m = board.length;
         int n = board[0].length;
-        visited.add(row*n + col);
+
         if(j==word.length()) 
             return true;
         char ch = word.charAt(j); 
